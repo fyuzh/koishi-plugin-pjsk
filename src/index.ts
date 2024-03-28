@@ -68,7 +68,8 @@ const generate = async (ctx, session, options, inputText) => {
 
   let {text, x, y, r: rotate, s: fontSize} = character.defaultText;
   if (inputText) {
-    text = inputText.replace(/\/+/g, '\\n').replace(/\n/g, '\\n').replace(/'/g, '\\\'');
+    text = inputText.replace(/\/+/g, '\\n').replace(/\n/g, '\\n').replace(/\\/g, '').replace(/'/g, '\\\'');
+    // text = encodeURI(text)
   }
   const {color, img} = character;
   const imgPath = 'file://' + dependencyPjskDir.replaceAll('\\', '/') + `/img/${img}`;
