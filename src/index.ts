@@ -76,7 +76,7 @@ const generate = async (ctx, session, options, inputText) => {
 
 // 处理默认值逻辑
   const curve = options.curve || false;
-  const spaceSize = options.spaceSize || 40;
+  const spaceSize = options.spaceSize || 50;
   const specifiedX = options.positionX !== undefined ? options.positionX : x;
   const specifiedY = options.positionY !== undefined ? options.positionY : y;
   const specifiedRotate = options.rotate !== undefined ? options.rotate : rotate;
