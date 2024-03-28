@@ -1,22 +1,39 @@
 {
   "name": "@fyuzh/koishi-plugin-pjsk",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "koishi": {
+    "hidden": true,
+    "service": {
+      "required": [
+        "puppeteer"
+      ]
+    }
+  },
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "pjsk",
+    "表情包",
+    "Project Sekai Stickers",
+    "啤酒烧烤",
+    "初音未来",
+    "生成器",
+    "Stickers",
+    "puppeteer"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.3"
+  },
+  "devDependencies": {
+    "koishi-plugin-puppeteer": "^3.8.3"
   }
 }
